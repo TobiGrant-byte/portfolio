@@ -1,4 +1,4 @@
-import { education, certifications, profile } from '../data'
+import { education, certifications, profile, asset } from '../data'
 import PhotoSlot from './PhotoSlot'
 
 export default function About() {
@@ -14,13 +14,13 @@ export default function About() {
           <PhotoSlot
             label="Studio / lab"
             aspect="aspect-[4/3]"
-            src="/images/studio.webp"
+            src={asset('images/studio.webp')}
             alt="Studio workspace scene"
           />
           <PhotoSlot
             label="Event still"
             aspect="aspect-[16/9]"
-            src="/images/event.webp"
+            src={asset('images/event.webp')}
             alt="Build With AI event still"
           />
         </div>

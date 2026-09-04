@@ -1,3 +1,5 @@
+export const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
 export const profile = {
   name: 'Efezino Alvin Melchizedek',
   shortName: 'Efezino',
@@ -7,7 +9,7 @@ export const profile = {
   github: 'https://github.com/TobiGrant-byte',
   githubHandle: 'TobiGrant-byte',
   location: 'Nigeria',
-  portrait: '/images/portrait.jpg',
+  portrait: asset('images/portrait.jpg'),
   summary:
     'Full-stack JavaScript developer (MERN, Next.js/TypeScript) with hands-on experience integrating AI/LLM APIs into shipped products. Built and presented a live AI chatbot at a Google-sponsored developer event, alongside freelance and academic full-stack projects covering auth, databases, and deployment. Currently expanding into cloud/DevOps (AWS, Docker, CI/CD) and deeper AI-product patterns (RAG, tool use).',
 }
@@ -68,7 +70,7 @@ export const projects = [
       'Diagnosed and resolved an API quota failure mid-event by switching providers on the fly (from Gemini to Groq), keeping the demo running live.',
     ],
     stack: ['Vite', 'React 18', 'Tailwind v3', 'Groq API'],
-    image: '/images/scholar.png',
+    image: asset('images/scholar.png'),
   },
   {
     code: '02',
@@ -81,7 +83,7 @@ export const projects = [
       'Resolved N+1 query performance issues, stale authentication context, Supabase RLS policy violations, and storage bucket configuration bugs.',
     ],
     stack: ['Next.js 14', 'TypeScript', 'Supabase', 'RLS'],
-    image: '/images/hive-tech-hub.webp',
+    image: asset('images/hive-tech-hub.webp'),
   },
   {
     code: '03',
@@ -94,7 +96,7 @@ export const projects = [
       'Worked within an existing AWS EC2 / GoDaddy / SFTP pipeline with a staging-live (xqseat.work / xqseat.com) environment split.',
     ],
     stack: ['WordPress', 'Elementor Pro', 'AWS EC2', 'SFTP'],
-    image: '/images/xqseat.webp',
+    image: asset('images/xqseat.webp'),
   },
   {
     code: '04',
@@ -107,7 +109,7 @@ export const projects = [
       'Handled image domain configuration and a full color-theme correction.',
     ],
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    image: '/images/sundayokafor.webp',
+    image: asset('images/sundayokafor.webp'),
   },
   {
     code: '05',
@@ -120,7 +122,7 @@ export const projects = [
       'Resolved Supabase SSL issues and Cloudinary upload errors, and stabilized the build by moving from Next.js 16 to 15.3.3.',
     ],
     stack: ['Next.js 15', 'NestJS', 'TypeORM', 'PostgreSQL', 'Cloudinary'],
-    image: '/images/elviana-luxe.webp',
+    image: asset('images/elviana-luxe.webp'),
   },
   {
     code: '06',
@@ -133,7 +135,7 @@ export const projects = [
       'Implemented RWMutex concurrency (race-detector verified), ACID-style transactions, a networked HTTP/JSON server, and PhantomDB Studio admin UI.',
     ],
     stack: ['Go', 'B+Tree', 'WAL', 'HTTP/JSON'],
-    image: '/images/phantomdb.webp',
+    image: asset('images/phantomdb.webp'),
   },
 ]
 
