@@ -15,7 +15,7 @@ export default function AskMe() {
   const [messages, setMessages] = useState<Msg[]>([
     {
       role: 'bot',
-      text: "Hi — I'm the offline assistant for Efezino's portfolio, powered by his actual CV data. Ask me anything about him.",
+      text: "Hi, I'm Efezino — ask anything about me",
       chips: starterQuestions,
     },
   ])
