@@ -9,6 +9,7 @@ import Skills from './components/Skills'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AskMe from './components/AskMe'
 
 function Shell() {
   const [booted, setBooted] = useState(false)
@@ -26,6 +27,7 @@ function Shell() {
         <Contact />
       </main>
       <Footer />
+      <AskMe />
       {!booted && <BootScreen onDone={() => setBooted(true)} />}
     </div>
   )
